@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow">
+  <meta name="title" content="DuckDuckGo Sign Up | How To Sign Up DuckDuckGo Account?" />
+  <meta name="description" content="Learn how to sign up for a DuckDuckGo account quickly and securely. Step-by-step guide to creating your private, secure DuckDuckGo account today." />
+  <meta name="keywords" content="duckduckgo sign up account, duckduckgo sign up, how to sign up duckduckgo, sign up duckduckgo account" />
+  
+  <title>DuckDuckGo Sign Up Account</title>
+
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f7f9fc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      background-color: #1d1f21;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav button {
+      background: transparent;
+      border: 2px solid #ffffff;
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease,
+        box-shadow 0.3s ease, transform 0.3s ease;
+      font-size: 1rem;
+    }
+
+    nav button:hover,
+    nav button:focus {
+      background-color: #3aa0ff;
+      color: white;
+      box-shadow: 0 0 10px #3aa0ff;
+      outline: none;
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #00aaff, #005f99);
+      color: white;
+      padding: 4rem 1rem 5rem;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.1;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+    }
+
+    .marquee-container {
+      background-color: rgba(255 255 255 / 0.15);
+      overflow: hidden;
+      white-space: nowrap;
+      border-radius: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.5rem 0;
+      user-select: none;
+      box-shadow: 0 0 15px rgba(255 255 255, 0.4);
+    }
+
+    .marquee {
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+      padding-left: 100%;
+      will-change: transform;
+      color: #f0f9ff;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Services Section */
+    .services {
+      max-width: 1200px;
+      margin: 3rem auto 5rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-box {
+      background-color: white;
+      border-radius: 15px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+      will-change: transform;
+    }
+
+    .service-box::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(270deg, #00aaff, #005f99, #00aaff);
+      animation: glowing 6s linear infinite;
+      opacity: 0.12;
+      border-radius: 15px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .service-box:hover,
+    .service-box:focus-within {
+      box-shadow: 0 15px 30px rgba(0, 160, 255, 0.4);
+      transform: translateY(-10px);
+      outline: none;
+    }
+
+    .service-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-content h3 {
+      color: #005f99;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .service-content p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    /* Article Section with long text */
+    main.article-content {
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+      color: #333;
+    }
+
+    main.article-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #005f99;
+      text-align: center;
+    }
+
+    main.article-content p {
+      margin-bottom: 1.3rem;
+      text-align: justify;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1d1f21;
+      color: #bbb;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      user-select: none;
+      margin-top: auto;
+    }
+
+    /* Responsive Typography and Layout */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav button {
+        padding: 0.45rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .service-content h3 {
+        font-size: 1.2rem;
+      }
+
+      main.article-content p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      .marquee {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="logo" aria-label="DuckDuckGo logo">DuckDuckGo</div>
+    <nav role="navigation" aria-label="Primary navigation">
+      <a href="https://aclogportal.com/duckduckgo-login"><button type="button" aria-label="Login">Login</button></a>
+      <a href="https://tek.chat/"><button type="button" aria-label="Support">Support</button></a>
+      <a href="http://howtosignup.live/"><button type="button" aria-label="Sign Up">Sign Up</button></a>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="Hero section">
+    <h1>DuckDuckGo Sign Up Account</h1>
+    <div class="marquee-container" aria-live="polite" aria-atomic="true">
+      <div class="marquee" role="marquee">
+        Discover the power of private browsing with DuckDuckGo. Signing up enables enhanced privacy controls, personalized settings, and a secure search experience that never tracks your data.
+      </div>
+    </div>
+  </section>
+
+  <section class="services" role="region" aria-label="Features and benefits">
+    <article class="service-box" tabindex="0" aria-describedby="feature1desc">
+      <div class="service-content">
+        <h3>Privacy Protection at Its Core</h3>
+        <p id="feature1desc">
+          DuckDuckGo’s sign up account lets you take control of your online privacy. Your searches remain anonymous, with no personal data stored or shared, ensuring complete confidentiality while browsing.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-box" tabindex="0" aria-describedby="feature2desc">
+      <div class="service-content">
+        <h3>Consistent Experience Across Devices</h3>
+        <p id="feature2desc">
+          Signing in syncs your preferences across all your devices. Whether on mobile, desktop, or tablet, enjoy a seamless private search experience tailored to your needs without compromising security.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-box" tabindex="0" aria-describedby="feature3desc">
+      <div class="service-content">
+        <h3>Enhanced Search Tools</h3>
+        <p id="feature3desc">
+          Unlock advanced search options when you sign up. Customize filters, save favorites, and utilize smart features that refine your searches while keeping your data private and secure.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-box" tabindex="0" aria-describedby="feature4desc">
+      <div class="service-content">
+        <h3>Ad and Tracker Blocking</h3>
+        <p id="feature4desc">
+          An account provides improved ad and tracker blocking, reducing distractions and improving page load times. Focus on what matters without advertisers following your every move.
+        </p>
+      </div>
+    </article>
+
+    <article class="service-box" tabindex="0" aria-describedby="feature5desc">
+      <div class="service-content">
+        <h3>Community and Support Access</h3>
+        <p id="feature5desc">
+          Account holders gain access to dedicated support and community forums. Get expert help, share experiences, and learn best practices for protecting your privacy online.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <main class="article-content" role="main" aria-label="Detailed information about DuckDuckGo sign up account">
+    <h2>Why Choose DuckDuckGo and Sign Up for an Account?</h2>
+    <p>
+      DuckDuckGo is a search engine that places your privacy front and center. Unlike traditional search engines that collect and sell your data, DuckDuckGo never tracks your searches or creates personal profiles. Signing up for an account enhances this experience by allowing you to personalize your privacy settings and take advantage of additional features that are only available to registered users.
+    </p>
+    <p>
+      When you sign up, you are not giving away your data. Instead, you gain control over how your searches are handled. Your preferences become portable, enabling a consistent experience no matter where you access the search engine. This approach allows you to enjoy the convenience of personalized settings without sacrificing privacy.
+    </p>
+    <p>
+      The sign-up process is simple and designed to respect your time and information. DuckDuckGo requires minimal information, focusing on security and usability rather than collecting excessive data. You can start using your account immediately, enjoying benefits such as saved settings and quick access to enhanced privacy tools.
+    </p>
+    <p>
+      Having an account also means you get access to enhanced search features. These include the ability to filter results more precisely, save preferred searches, and avoid unwanted advertisements or trackers. The technology behind DuckDuckGo actively works to block tracking scripts and invasive ads, making your browsing faster and safer.
+    </p>
+    <p>
+      Another critical advantage of creating an account is community support. DuckDuckGo offers an active and knowledgeable user base that shares tips, troubleshooting advice, and best privacy practices. As an account holder, you have privileged access to these communities and support channels, helping you stay informed and protected.
+    </p>
+    <p>
+      The privacy-first philosophy of DuckDuckGo extends beyond search. With your account, you can integrate with privacy tools like browser extensions and mobile apps, further shielding you from the many tracking technologies pervasive on the web today. These tools complement the account features by providing continuous protection across your digital life.
+    </p>
+    <p>
+      Signing up also contributes to the broader mission of privacy advocacy. By choosing DuckDuckGo and supporting its services through an account, you help promote a safer internet where users retain control over their personal information. Your participation encourages the development of privacy-respecting technologies and services.
+    </p>
+    <p>
+      If you value simplicity combined with strong privacy protection, DuckDuckGo’s sign up account is an ideal choice. It offers the convenience of modern search tools without compromising the core principle of anonymity. Whether you are a casual user or someone who takes privacy seriously, the platform adapts to your needs.
+    </p>
+    <p>
+      Moreover, the mobile responsive design of DuckDuckGo means your sign-up benefits are available anytime, anywhere. Whether you’re on a smartphone or desktop, the interface remains intuitive and accessible, ensuring that your privacy is never out of reach.
+    </p>
+    <p>
+      Overall, signing up for a DuckDuckGo account empowers you to take the next step in protecting your online identity. It enriches your search experience by balancing customization with privacy, making your online interactions more secure and enjoyable. Embrace a private browsing future by joining DuckDuckGo today.
+    </p>
+  </main>
+
+  <footer role="contentinfo">
+    &copy; 2025 DuckDuckGo. All rights reserved.
+  </footer>
+  
+</body>
+</html>
